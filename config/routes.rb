@@ -12,4 +12,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "posts#index"
+  get "songs/the_beginning", to: "songs#the_beginning"
+  get "songs/remake", to: "songs#remake"
+  get "songs/nobody_home", to: "songs#nobody_home"
 end

@@ -1,2 +1,21 @@
-<h1 class="text-4xl text-green-700 font-semibold underline">Hello,world</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<div class="absolute top-4 left-4 text-white">
+  <h1 class="text-4xl text-green-700 font-semibold underline">ONEOKROCKの世界へようこそ</h1>
+  <h2>
+  <a href="/songs/the_beginning.html" target="_blank">
+    The Beginning
+  </a>
+  </h2>
+  <h2>
+  <a href="/songs/remake.html" target="_blank">
+    Re:make
+  </a>
+  </h2>
+  <h2>
+  <a href="/songs/nobody_home.html" target="_blank">
+    Nobody's Home
+  </a>
+  </h2>
+  <body class="min-h-screen bg-cover bg-center" style="background-image: url(<%= asset_path('background.jpeg') %>)">
+    <%= yield %>
+  </body>
+</div>
